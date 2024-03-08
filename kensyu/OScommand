@@ -1,0 +1,23 @@
+Last login: Fri Mar  8 19:22:19 on ttys000
+hiratayuuya@hiratayuuyanoMacBook-Air ~ % ls tmp
+hoge				フィードバック.aux
+interpreter_name.py		フィードバック.log
+interpreter_path.py		フィードバック.pdf
+missing				フィードバック.tex
+tmp
+hiratayuuya@hiratayuuyanoMacBook-Air ~ % cd tmp/missing 
+hiratayuuya@hiratayuuyanoMacBook-Air missing % ls
+semester
+hiratayuuya@hiratayuuyanoMacBook-Air missing % vi semester #ここで編集モードに行き、semester内にコードを追加（４つ目）
+hiratayuuya@hiratayuuyanoMacBook-Air missing % cat semster
+cat: semster: No such file or directory
+hiratayuuya@hiratayuuyanoMacBook-Air missing % cat semester 
+#!/bin/sh
+curl --head --silent https://missing.csail.mit.edu
+hiratayuuya@hiratayuuyanoMacBook-Air missing % ./semester
+zsh: permission denied: ./semester
+hiratayuuya@hiratayuuyanoMacBook-Air missing % chmod +x semester #これで皆に実行権限が与えられるファイルになった（課題１）→os9.txt
+
+課題２を1行でやる方法がわからん？？？
+
+
